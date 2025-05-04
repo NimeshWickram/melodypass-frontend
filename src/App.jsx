@@ -37,12 +37,14 @@ export default App*/
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Login from './pages/Auth/Login';
+import Signup from './pages/Auth/Signup';
 
 
 
 
 // Import these pages as you build them
-// import EventsList from './pages/EventsList';
+ //import EventsList from './pages/EventsList';
 // import EventDetails from './pages/EventDetails';
 // import Checkout from './pages/Checkout';
 // import UserProfile from './pages/UserProfile';
@@ -64,8 +66,8 @@ function App() {
             {/* <Route path="/checkout/:id" element={<Checkout />} /> */}
             {/* <Route path="/profile" element={<UserProfile />} /> */}
             {/* <Route path="/admin/*" element={<AdminDashboard />} /> */}
-            { /*<Route path="/login" element={<Login />} />*/ }
-            { /*<Route path="/signup" element={<Signup />} />*/ }
+             <Route path="/login" element={<Login />} /> 
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </main>
         <footer className="bg-gray-800 text-white py-8">
@@ -75,6 +77,7 @@ function App() {
             </div>
           </div>
         </footer>
+        
       </div>
       
     </BrowserRouter>
